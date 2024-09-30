@@ -1,3 +1,5 @@
+import { Typography } from "@mui/material";
+
 export const CotizaPage = () => {
- return <div>CotizaPage</div>;
+ return <Typography>CotizaPage</Typography>;
 };
