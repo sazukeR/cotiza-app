@@ -3,9 +3,12 @@ import { createRoot } from "react-dom/client";
 
 import "./styles.css";
 import { CotizaApp } from "./CotizaApp";
+import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
  <StrictMode>
-  <CotizaApp />
+  <BrowserRouter>
+   <CotizaApp />
+  </BrowserRouter>
  </StrictMode>
 );
