@@ -1,5 +1,13 @@
-import React from "react";
+import { CotizaLayout } from "./layouts/CotizaLayout";
+import { AppRouter } from "./router/AppRouter";
+import { AppTheme } from "./theme";
 
 export const CotizaApp = () => {
- return <h1>Hello World</h1>;
+ return (
+  <AppTheme>
+   <CotizaLayout>
+    <AppRouter />
+   </CotizaLayout>
+  </AppTheme>
+ );
 };
