@@ -24,16 +24,27 @@ export const CotizaLayout = ({ children }) => {
   <>
    <Box
     sx={{
-     flexGrow: 1,
-     m: "auto",
-     bgcolor: "#FAFBFF",
+     display: "block",
+     m: "0px",
      maxWidth: "1400px",
+     backgroundImage: {
+      xs: `radial-gradient(circle, #00F4E2 10%, transparent 40%), 
+     radial-gradient(circle, #00FF7F 1%, transparent 50%)`,
+      sm: `radial-gradient(circle, #00F4E2 1%, transparent 50%), 
+                      radial-gradient(circle, #00FF7F 1%, transparent 50%)`,
+     },
+     backgroundRepeat: "no-repeat",
+     backgroundPosition: {
+      xs: "-300px 400px, 400px -200px",
+      sm: "-600px -150%, 600px 90%",
+     },
+     backgroundSize: { xs: "500px", sm: "1000px 1000px" },
     }}
    >
     <AppBar
      position="static"
      color="transparent"
-     sx={{ boxShadow: "none", px: "8%" }}
+     sx={{ boxShadow: "none", px: "3%" }}
     >
      <Toolbar>
       <Grid container display="flex" justifyContent="space-between">
