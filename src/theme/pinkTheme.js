@@ -12,6 +12,16 @@ export const pinkTheme = createTheme({
         },
         error: {
           main: red.A400
+        },
+        transparent: {
+          main: "#00000000"
+        },
+        bgcolor1: {
+          main: "#FAFBFF"
         }
-  }
+    },
+    typography: {
+      fontFamily: ["Lato", "Roboto"].join(","),
+      
+    }
 })
