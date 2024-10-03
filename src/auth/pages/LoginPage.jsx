@@ -55,7 +55,7 @@ export const LoginPage = () => {
    return;
   }
 
-  startLogin();
+  startLogin(doc, noDoc, cel);
  };
 
  useEffect(() => {

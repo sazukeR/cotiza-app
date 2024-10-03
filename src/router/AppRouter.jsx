@@ -6,6 +6,7 @@ import { CheckingAuth } from "../components/CheckingAuth";
 import { login, logout } from "../store/auth/authSlice";
 import { CotizaPage } from "../cotiza/pages/CotizaPage";
 import { LoginPage } from "../auth/pages/LoginPage";
+import { ResumePage } from "../cotiza/pages/ResumePage";
 
 export const AppRouter = () => {
  const { status } = useAuthStore();
@@ -35,6 +36,8 @@ export const AppRouter = () => {
      <>
       <Route path="/cotiza" element={<CotizaPage />} />
       <Route path="/*" element={<Navigate to="/cotiza" />} />
+
+      <Route path="/resume" element={<ResumePage />} />
      </>
     )}
    </Routes>

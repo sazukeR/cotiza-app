@@ -8,6 +8,9 @@ export const authSlice = createSlice({
    name: null,
    lastName: null,
    birthday: null,
+   doc: null,
+   noDoc: null,
+   cel: null,
   },
 
   errorMessage: undefined,

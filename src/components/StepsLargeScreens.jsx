@@ -1,10 +1,10 @@
-import { Box, IconButton, Typography } from "@mui/material";
 import { useTheme } from "@emotion/react";
-
-import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRounded";
 import { useAuthStore } from "../hooks/useAuthStore";
 import { usePlans } from "../hooks/usePlans";
 import { useLocation } from "react-router-dom";
+
+import { Box, IconButton, Typography } from "@mui/material";
+import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRounded";
 
 export const StepsLargeScreens = () => {
  const theme = useTheme();
@@ -63,6 +63,8 @@ export const StepsLargeScreens = () => {
       borderColor: { xs: "#A9AFD9" },
       width: "1.5rem",
       height: "1.5rem",
+      color: { xs: !isOnSpecificPage ? "white" : "" },
+      backgroundColor: { xs: !isOnSpecificPage ? "#4F4FFF" : "" },
      }}
     >
      <Typography>2</Typography>

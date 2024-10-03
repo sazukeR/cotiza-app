@@ -1,9 +1,10 @@
-import { Box, IconButton, Typography } from "@mui/material";
 import { useTheme } from "@emotion/react";
 import { useAuthStore } from "../hooks/useAuthStore";
+import { usePlans } from "../hooks/usePlans";
+
+import { Box, IconButton, Typography } from "@mui/material";
 import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRounded";
 import pogress from "../../public/atoms_stepper_progress.png";
-import { usePlans } from "../hooks/usePlans";
 
 export const StepsSmallScreens = () => {
  const { startLogout } = useAuthStore();
