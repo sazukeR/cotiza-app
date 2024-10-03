@@ -18,7 +18,8 @@ export const CotizaLayout = ({ children }) => {
 
  const currentPath = location.pathname;
 
- const isOnSpecificPage = currentPath === "/cotiza";
+ const isOnSpecificPage =
+  currentPath === "/cotiza" || currentPath === "/resume";
 
  const navigate = useNavigate();
 

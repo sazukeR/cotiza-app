@@ -1,22 +1,17 @@
 import { Box, Grid, Typography, useMediaQuery } from "@mui/material";
-
-import { useTheme } from "@emotion/react";
-
 import { StepsSmallScreens } from "../../components/StepsSmallScreens";
-import { useAuthStore } from "../../hooks/useAuthStore";
 import { StepsLargeScreens } from "../../components/StepsLargeScreens";
-
-import protection1 from "../../../public/IcProtectionLight.png";
-
-import protection2 from "../../../public/IcAddUserLight.png";
-
 import { ButtonOption } from "../../components/ButtonOption";
 import { PlansList } from "../../components/plansList";
 import { useSelector } from "react-redux";
 import { usePlans } from "../../hooks/usePlans";
 
+import protection1 from "../../../public/IcProtectionLight.png";
+import protection2 from "../../../public/IcAddUserLight.png";
+
 export const CotizaPage = () => {
  const { startForOther, startForMe } = usePlans();
+ const { user } = useSelector((state) => state.auth);
  const { plansState, isForMeActive, isForOtherActive } = useSelector(
   (state) => state.plans
  );
@@ -77,7 +72,7 @@ export const CotizaPage = () => {
         ml: { xs: "2rem", sm: "1rem" },
        }}
       >
-       Rocío ¿Para quién deseas cotizar?
+       {user.name} ¿Para quién deseas cotizar?
       </Typography>
       <Typography
        component="h6"

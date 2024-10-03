@@ -1,11 +1,20 @@
 import { Box, Button, Typography } from "@mui/material";
-import imagenPrueba from "../../public/IcProtectionLight.png";
-
-import line from "../../public/Line.png";
 import { useTheme } from "@emotion/react";
+import { useNavigate } from "react-router";
+
+import imagenPrueba from "../../public/IcProtectionLight.png";
+import line from "../../public/Line.png";
 
 export const PlanCard = ({ plan }) => {
  const theme = useTheme();
+
+ const navigate = useNavigate();
+
+ const handleNavigation = () => {
+  navigate("/resume", {
+   state: { planName: plan.name, planPrice: plan.price },
+  });
+ };
 
  return (
   <Box
@@ -126,6 +135,7 @@ export const PlanCard = ({ plan }) => {
      borderRadius: "1rem",
      py: "0.5rem",
     }}
+    onClick={handleNavigation}
    >
     Seleccionar Plan
    </Button>

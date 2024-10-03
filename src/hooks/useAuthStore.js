@@ -14,7 +14,7 @@ export const useAuthStore = () => {
 
  const {clearPlans} = usePlans()
 
- const startLogin = async () => {
+ const startLogin = async (doc, noDoc, cel) => {
   dispatch(checkingCredentials());
 
    const { data } = await usersApi.get();
@@ -24,6 +24,9 @@ export const useAuthStore = () => {
     name: data.name,
     lastName: data.lastName,
     birthDay: data.birthDay,
+    doc: doc,
+    noDoc: noDoc,
+    cel: cel,
    }
 
    localStorage.setItem("user_data", JSON.stringify(foundUser));

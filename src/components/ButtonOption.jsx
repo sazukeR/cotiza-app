@@ -29,9 +29,9 @@ export const ButtonOption = ({ info }) => {
      "& .MuiSvgIcon-root": {
       fontSize: 28,
      },
-     color: "#A9AFD9", // Color del checkbox no seleccionado
+     color: "#A9AFD9",
      "&.Mui-checked": {
-      color: "#4CAF50", // Color verde cuando está seleccionado
+      color: "#4CAF50",
      },
     }}
    />
