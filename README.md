@@ -58,4 +58,4 @@ yarn dev
 
 ## MIT License
 
-Copyright (c) 2023 Reinaldo Contreras
+Copyright (c) 2023 Reinaldo Jesus Contreras
