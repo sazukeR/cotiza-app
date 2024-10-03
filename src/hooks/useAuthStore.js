@@ -2,21 +2,23 @@ import { useDispatch, useSelector } from "react-redux";
 import usersApi from "../api/usersApi";
 import {
  checkingCredentials,
- clearErrorMessage,
  login,
  logout,
 } from "../store/auth/authSlice";
+import { usePlans } from "./usePlans";
 
 export const useAuthStore = () => {
  const dispatch = useDispatch();
+
  const { status, user, errorMessage } = useSelector((state) => state.auth);
+
+ const {clearPlans} = usePlans()
 
  const startLogin = async () => {
   dispatch(checkingCredentials());
 
    const { data } = await usersApi.get();
 
-   console.log(data)
 
    const foundUser = {
     name: data.name,
@@ -33,8 +35,8 @@ export const useAuthStore = () => {
   
   }
  
-
- const startLogout = () => {
+  const startLogout = () => {
+   
   localStorage.clear();
   dispatch(logout());
  };
