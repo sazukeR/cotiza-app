@@ -18,7 +18,13 @@ export const pinkTheme = createTheme({
         },
         bgcolor1: {
           main: "#FAFBFF"
-        }
+        },
+        purpleLight: {
+          main: "#EDEFFC"
+        },
+        purple: {
+          main: "#4F4FFF"
+        },
     },
     typography: {
       fontFamily: ["Lato", "Roboto"].join(","),
