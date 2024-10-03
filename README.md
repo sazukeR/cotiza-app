@@ -1,8 +1,61 @@
-# React + Vite
+# Cotiza-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Description
 
-Currently, two official plugins are available:
+Aplicacion simple para elegir planes que se adapten a tus necesidades.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img src="./public/pre1.png" alt="Login" width="100" height="200">
+
+<img src="./public/pre2.png" alt="Quote" width="200" height="150">
+&nbsp
+<img src="./public/pre3.png" alt="Thanks" width="100" height="200">
+
+## Used Tools
+
+- <img src="https://github.com/sazukeR/devicon/blob/master/icons/react/react-original.svg" width="20" height="20" style="border-radius: 50%; display: inlinek;"> <span>React</span>
+
+- <img src="https://github.com/sazukeR/devicon/blob/master/icons/redux/redux-original.svg" width="20" height="20" style="border-radius: 50%; display: inlinek;"> <span>Redux</span>
+
+- <img src="https://github.com/sazukeR/devicon/blob/master/icons/materialui/materialui-original.svg" width="20" height="20" style="border-radius: 50%; display: inlinek;"> <span>Material UI</span>
+
+- <img src="https://github.com/sazukeR/devicon/blob/master/icons/eslint/eslint-original-wordmark.svg" width="20" height="20" style="border-radius: 50%; display: inlinek;"> <span>Eslint</span>
+
+## Another used packages
+
+- react-router-dom v6
+
+- sweetalert2
+
+- axios
+
+- redux toolkit
+
+## How to use it
+
+1. Clone the repository
+
+```
+git clone https://github.com/sazukeR/cotiza-app.git
+```
+
+2. Move to project folder
+
+```
+cd cotiza-app
+```
+
+3. Install project dependencies
+
+```
+yarn
+```
+
+4. Run the project
+
+```
+yarn dev
+```
+
+## MIT License
+
+Copyright (c) 2023 Reinaldo Contreras
