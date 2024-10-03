@@ -2,7 +2,7 @@
 
 ## Project Description
 
-Aplicacion simple para elegir planes que se adapten a tus necesidades.
+Simple application to choose plans that suit your needs.
 
 <img src="./public/pre1.png" alt="Login" width="100" height="200">
 
