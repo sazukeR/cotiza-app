@@ -4,12 +4,6 @@
 
 Simple application to choose plans that suit your needs.
 
-<img src="./public/pre1.png" alt="Login" width="100" height="200">
-
-<img src="./public/pre2.png" alt="Quote" width="200" height="150">
-&nbsp
-<img src="./public/pre3.png" alt="Thanks" width="100" height="200">
-
 ## Used Tools
 
 - <img src="https://github.com/sazukeR/devicon/blob/master/icons/react/react-original.svg" width="20" height="20" style="border-radius: 50%; display: inlinek;"> <span>React</span>
