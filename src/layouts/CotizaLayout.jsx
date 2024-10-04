@@ -35,7 +35,6 @@ export const CotizaLayout = ({ children }) => {
      flexDirection: "column",
      height: "100vh",
      m: "0px",
-     maxWidth: "1400px",
      backgroundColor: "#fafafb",
      backgroundImage: {
       xs: !isOnSpecificPage
